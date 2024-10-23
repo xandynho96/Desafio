@@ -3,12 +3,6 @@ import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
   name: "Button",
-  props: {
-    product: {
-      type: Object as PropType<{ label: string }>,
-      required: true,
-    },
-  },
 });
 </script>
 

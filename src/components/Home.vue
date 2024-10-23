@@ -12,8 +12,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <Heading />
-  <Products />
+  <Heading/>
+  <Products/>
 </template>
 
  

@@ -9,12 +9,7 @@ export default defineComponent({
     Button,
   },
   name: "Heading",
-  props: {
-    product: {
-      type: Object as () => IHeading,
-      required: true,
-    },
-  },
+  
 });
 </script>
 
@@ -31,7 +26,7 @@ export default defineComponent({
         </p>
       </span>
 
-      <Button>Order Now</Button>
+       <Button :product="{ label: 'Order Now' }">Order Now</Button>
     </div>
   </section>
 </template>

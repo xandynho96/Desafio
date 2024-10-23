@@ -23,12 +23,7 @@ export default defineComponent({
     Card,
   },
   name: "Products",
-  props: {
-    product: {
-      type: Object as () => IProducts,
-      required: true,
-    },
-  },
+ 
   setup() {
     const products = ref<Product[]>([]);
     const search = ref<string>("");
