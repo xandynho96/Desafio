@@ -14,7 +14,6 @@ export default defineComponent({
     setup(props) {
         const flip = ref(false);
         const isFavorite = ref(false);
-        // Verificar se o card já está favoritado no local storage
         const checkFavorite = () => {
             const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
             isFavorite.value = favorites.includes(props.product.id);
