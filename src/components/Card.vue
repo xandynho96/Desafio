@@ -31,7 +31,6 @@ export default defineComponent({
     const flip = ref<boolean>(false);
     const isFavorite = ref<boolean>(false);
 
-    // Verificar se o card já está favoritado no local storage
     const checkFavorite = () => {
       const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
       isFavorite.value = favorites.includes(props.product.id);

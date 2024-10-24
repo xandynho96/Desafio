@@ -32,7 +32,7 @@ export default defineComponent({
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/products`
+          `${import.meta.env.VITE_API_URL}/api/mongo-products`
         );
         if (!response.ok) throw new Error("Falha ao buscar produtos");
         const data = await response.json();
